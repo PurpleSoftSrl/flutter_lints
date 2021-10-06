@@ -1,6 +1,8 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
+  plugins:
+     - dart_code_metrics
   language:
     strict-inference: true
     strict-raw-types: true
@@ -15,6 +17,28 @@ analyzer:
     unsafe_html: error
     inference_failure_on_function_invocation: ignore
     unnecessary_null_comparison: warning
+
+dart_code_metrics:
+   anti-patterns:
+     - long-method
+     - long-parameter-list
+   metrics:
+     cyclomatic-complexity: 20
+     maximum-nesting-level: 5
+     number-of-parameters: 4
+     source-lines-of-code: 50
+   metrics-exclude:
+     - test/**
+     - pre_commit/**
+     - openapi/**
+     - lib/shared/custom/** ## file copiati da flutter che seguono altre regole
+     - azure/**
+   rules:
+     - no-boolean-literal-compare
+     - no-empty-block
+     - prefer-trailing-comma
+     - prefer-conditional-expressions
+     - no-equal-then-else
 
 linter:
   rules:
