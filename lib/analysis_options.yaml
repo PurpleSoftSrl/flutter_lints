@@ -14,10 +14,11 @@ analyzer:
     unnecessary_statements: error
     unsafe_html: error
     inference_failure_on_function_invocation: ignore
+    unnecessary_null_comparison: warning
 
 linter:
   rules:
-    unrelated_type_equality_checks: info
+    unrelated_type_equality_checks: error
     avoid_bool_literals_in_conditional_expressions: info
     avoid_escaping_inner_quotes: info
     avoid_positional_boolean_parameters: info
