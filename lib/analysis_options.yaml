@@ -15,6 +15,7 @@ analyzer:
     unsafe_html: error
     inference_failure_on_function_invocation: ignore
     unnecessary_null_comparison: warning
+    missing_required_param: error
 
 linter:
   rules:
