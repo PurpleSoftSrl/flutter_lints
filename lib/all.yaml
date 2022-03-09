@@ -1,0 +1,135 @@
+analyzer:
+  plugins:
+     - dart_code_metrics
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  strong-mode:
+   implicit-casts: false
+  errors:
+    unrelated_type_equality_checks: error
+    dead_code: info
+    empty_statements: error
+    avoid_empty_else: error
+    unnecessary_statements: error
+    unsafe_html: error
+    inference_failure_on_function_invocation: ignore
+    unnecessary_null_comparison: warning
+    missing_required_param: error
+
+linter:
+  rules:
+    use_key_in_widget_constructors: false
+    avoid_bool_literals_in_conditional_expressions: true
+    avoid_escaping_inner_quotes: true
+    avoid_positional_boolean_parameters: true
+    avoid_redundant_argument_values: true
+    avoid_unnecessary_containers: true
+    avoid_void_async: true
+    camel_case_types: true
+    cascade_invocations: true
+    constant_identifier_names: true
+    exhaustive_cases: true
+    join_return_with_assignment: true
+    leading_newlines_in_multiline_strings: true
+    missing_whitespace_between_adjacent_strings: true
+    non_constant_identifier_names: true
+    prefer_adjacent_string_concatenation: true
+    prefer_const_constructors_in_immutables: true
+    # prefer_expression_function_bodies  # lots of unnecessary lints in build functions: info: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+    # prefer_int_literals # generates errors in fold(): info: true
+    prefer_interpolation_to_compose_strings: true
+    prefer_is_not_operator: true
+    prefer_typing_uninitialized_variables: true
+    sort_constructors_first: true
+    type_annotate_public_apis: true
+    unnecessary_await_in_return: true
+    unnecessary_lambdas: true
+    unnecessary_parenthesis: true
+    unnecessary_string_escapes: true
+    unnecessary_string_interpolations: true
+    use_is_even_rather_than_modulo: true
+    # prefer_const_constructors  # lots of unnecessary lints in controllers/services: info: true
+    always_declare_return_types: true
+    always_require_non_null_named_parameters: true
+    annotate_overrides: true
+    avoid_empty_else: true
+    avoid_init_to_null: true
+    avoid_renaming_method_parameters: true
+    avoid_return_types_on_setters: true
+    avoid_returning_null_for_void: true
+    avoid_single_cascade_in_expression_statements: true
+    avoid_unused_constructor_parameters: true
+    await_only_futures: true
+    camel_case_extensions: true
+    require_trailing_commas: true
+    file_names: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_if_null_operators: true
+    prefer_null_aware_method_calls: true
+    prefer_null_aware_operators: true
+    prefer_single_quotes: true
+    prefer_spread_collections: true
+    curly_braces_in_flow_control_structures: true
+    empty_constructor_bodies: true
+    library_names: true
+    avoid_function_literals_in_foreach_calls: true
+    unawaited_futures: true
+    unnecessary_brace_in_string_interps: true
+    unnecessary_const: true
+    unnecessary_getters_setters: true
+    unnecessary_new: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_this: true
+    unsafe_html: true
+    use_full_hex_values_for_flutter_colors: true
+    use_function_type_syntax_for_parameters: true
+    use_rethrow_when_possible: true
+    valid_regexps: true
+    avoid_null_checks_in_equality_operators: true
+    avoid_relative_lib_imports: true
+    avoid_shadowing_type_parameters: true
+    avoid_types_as_parameter_names: true
+    empty_catches: true
+    library_prefixes: true
+    no_duplicate_case_values: true
+    null_closures: true
+    omit_local_variable_types: true
+    prefer_collection_literals: true
+    prefer_conditional_assignment: true
+    prefer_contains: true
+    prefer_equal_for_default_values: true
+    prefer_final_fields: true
+    prefer_for_elements_to_map_fromIterable: true
+    prefer_generic_function_type_aliases: true
+    prefer_inlined_adds: true
+    prefer_iterable_whereType: true
+    recursive_getters: true
+    slash_for_doc_comments: true
+    sort_child_properties_last: true
+    type_init_formals: true
+    sized_box_for_whitespace: true
+    avoid_web_libraries_in_flutter: true
+    no_logic_in_create_state: true
+    
+    
+dart_code_metrics:
+   anti-patterns:
+     - long-method
+     - long-parameter-list
+   metrics:
+     cyclomatic-complexity: 20
+     maximum-nesting-level: 5
+     number-of-parameters: 4
+     source-lines-of-code: 50
+   metrics-exclude:
+     - test/**
+   rules:
+     - no-boolean-literal-compare
+     - no-empty-block
+     - prefer-trailing-comma
+     - prefer-conditional-expressions
+     - no-equal-then-else
