@@ -8,7 +8,7 @@ dart_code_metrics:
      - long-parameter-list
    metrics:
      cyclomatic-complexity: 20
-     maximum-nesting-level: 5
+     maximum-nesting-level: 3
      number-of-parameters: 4
      source-lines-of-code: 50
    metrics-exclude:
@@ -19,3 +19,19 @@ dart_code_metrics:
      - prefer-trailing-comma
      - prefer-conditional-expressions
      - no-equal-then-else
+     - avoid-cascade-after-if-null
+     - avoid-top-level-members-in-tests
+     - avoid-unnecessary-type-assertions
+     - avoid-unnecessary-conditionals
+     - avoid-unused-parameters
+     - binary-expression-operand-order
+     - missing-test-assertion
+     - prefer-commenting-analyzer-ignores
+     - always-remove-listener
+     - avoid-unnecessary-setstate
+     - use-setstate-synchronously
+     - avoid-expanded-as-spacer
+     - avoid-wrapping-in-padding
+     - check-for-equals-in-render-object-setters
+     - consistent-update-render-object
+     - prefer-correct-edge-insets-constructor
