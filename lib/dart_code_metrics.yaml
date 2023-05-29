@@ -26,7 +26,6 @@ dart_code_metrics:
      - avoid-unused-parameters
      - binary-expression-operand-order
      - missing-test-assertion
-     - prefer-commenting-analyzer-ignores
      - always-remove-listener
      - avoid-unnecessary-setstate
      - use-setstate-synchronously
