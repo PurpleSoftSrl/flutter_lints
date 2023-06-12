@@ -2,8 +2,7 @@ analyzer:
   language:
     strict-inference: true
     strict-raw-types: true
-  strong-mode:
-   implicit-casts: false
+    strict-casts: true
   errors:
     unrelated_type_equality_checks: error
     dead_code: info
