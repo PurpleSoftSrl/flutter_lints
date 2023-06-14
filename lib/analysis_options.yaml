@@ -98,7 +98,6 @@ linter:
     prefer_collection_literals: true
     prefer_conditional_assignment: true
     prefer_contains: true
-    prefer_equal_for_default_values: true
     prefer_final_fields: true
     prefer_for_elements_to_map_fromIterable: true
     prefer_generic_function_type_aliases: true
@@ -179,4 +178,8 @@ linter:
     use_setters_to_change_properties: true
     use_test_throws_matchers: true
     use_to_and_as_if_applicable: true
-    
+    unnecessary_breaks: true
+    matching_super_parameters: true
+    no_literal_bool_comparisons: true
+    invalid_case_patterns: true
+    type_literal_in_constant_pattern: true

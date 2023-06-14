@@ -3,10 +3,10 @@ description: Purplesoft commonly used set of lints.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.9.2+4
+version: 1.10.0+5
 
 environment:
-  sdk: ">=2.19.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   dart_code_metrics: 
