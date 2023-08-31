@@ -128,9 +128,6 @@ linter:
     avoid_type_to_string: true
     directives_ordering: true
     hash_and_equals: true
-    
-    #####
-
     avoid_print: true
     avoid_types_on_closure_parameters: true
     cancel_subscriptions: true
@@ -183,3 +180,5 @@ linter:
     no_literal_bool_comparisons: true
     invalid_case_patterns: true
     type_literal_in_constant_pattern: true
+    no_self_assignments: true
+    always_use_package_imports: true
