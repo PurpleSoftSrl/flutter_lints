@@ -50,7 +50,6 @@ linter:
     use_is_even_rather_than_modulo: true
     # prefer_const_constructors  # too much noise
     always_declare_return_types: true
-    always_require_non_null_named_parameters: true
     annotate_overrides: true
     avoid_empty_else: true
     avoid_init_to_null: true
