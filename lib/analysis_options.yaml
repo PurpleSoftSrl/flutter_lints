@@ -80,7 +80,6 @@ linter:
     unnecessary_new: true
     unnecessary_null_in_if_null_operators: true
     unnecessary_this: true
-    unsafe_html: true
     use_full_hex_values_for_flutter_colors: true
     use_function_type_syntax_for_parameters: true
     use_rethrow_when_possible: true
@@ -181,3 +180,6 @@ linter:
     type_literal_in_constant_pattern: true
     no_self_assignments: true
     always_use_package_imports: true
+    strict_top_level_inference: true
+    unnecessary_underscores: true
+    use_truncating_division: true
