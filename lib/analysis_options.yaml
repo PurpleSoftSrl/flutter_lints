@@ -182,3 +182,7 @@ linter:
     strict_top_level_inference: true
     unnecessary_underscores: true
     use_truncating_division: true
+    unnecessary_unawaited: true
+    switch_on_type: true
+    use_null_aware_elements: true
+    unnecessary_ignore: true
